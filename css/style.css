@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Raleway');
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    font-family: 'Lobster', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    position: sticky;
+}
+nav .my-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    opacity: 0.5;
+}
+nav .my-container:hover{
+    opacity: 0.7;
+}
+nav .nav-item:hover {
+    background-color: rebeccapurple;
+}
+
+nav .navbar-brand{
+    transform:matrix(2);
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+}
+nav .navbar-brand:hover{
+    color: white !important;
+}
+nav i{
+    color: goldenrod;
+}
+nav .nav-item{
+    text-align: left;
+    font-size: 1.5rem;
+    padding: 0 1rem;
+}
+nav .my-link{
+    color: white !important;
+}
+.navbar-inner{
+    background: transparent;
+}
+.top{
+    overflow: scroll;
+    background-size: cover;
+    background-position: center;
+}
+.background-animate {
+    background-size: 400%;
+
+    -webkit-animation: AnimationName 3s ease infinite;
+    -moz-animation: AnimationName 3s ease infinite;
+    animation: AnimationName 3s ease infinite;
+  }
+
+  @keyframes AnimationName {
+    0%,
+    100% {
+      background-position: 0% 50%;
+    }
+    50%{
+      background-position: 100% 50%;
+    }
+  }
+#intro{
+    backdrop-filter: blur(10px);
+    opacity: 0.5;
+    text-align: center;
+    overflow: scroll;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    color: white;
+    padding: 2rem 6rem 5rem;
+    font-family: 'Fasthand', cursive;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#intro h1{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
