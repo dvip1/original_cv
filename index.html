@@ -5,52 +5,169 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- bootstrap cdn -->
-    <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/tailwind.css">
+    <title>exp</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <title>Portfolio</title>
 </head>
 
 <body>
-    <section class="top     w-fullh-screen bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 background-animate">
-        <nav class="navbar navbar-expand-lg navbar-light  ">
-            <div class="container">
-                <a class="navbar-brand" href="#"><i class="fa-solid fa-star"></i>Dvip</a>
-                <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav  mb-2 mb-lg ms-auto navbar-scroll">
-                        <li class="nav-item">
-                            <a class="nav-link active my-link" aria-current="page" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active my-link" aria-current="page" href="#">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active my-link" aria-current="page" href="#">Contacts</a>
-                        </li>
 
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <div id="intro" class="backdrop-blur-3xl">
-
-            <h1 id="typing_effect" style="font-size:5rem;"></h1>
-        </div>
-    </section>
-
-    <section class="About"></section>
-
+    <!-------------importing js bs and fontawesome --------------->
     <script src="https://kit.fontawesome.com/c9dc8e623e.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <!-------------/importing js bs and fontawesome--------------->
+    <section id="top">
+        <div class="push"></div>
+        <div class="container my-nav sticky-top">
+            <nav id="navbar_top" class="navbar-light navbar  navbar-expand-md">
+                <a href="#" style="font-size: 1.5rem;" class="navbar-brand brand nav-brand "> Dvip</a>
 
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse my-nav" id="navbar">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item nav-items "><a href="#about" class="nav-link">About</a></li>
+                        <li class="nav-item nav-items "><a href="#skills" class="nav-link">Projects</a></li>
+                        <li class="nav-item nav-items "><a href="#contacts" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="top-main">
+            <div class="conatiner">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h1>
+                        <div class="animation">
+                            <button href="#" class="btn btn-light">Log in</button>
+                            <button href="#" class="btn btn-light">Sign up</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg"
+        class="transition duration-300 ease-in-out delay-150">
+        <style>
+            .path-0 {
+                animation: pathAnim-0 4s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+            }
+
+            @keyframes pathAnim-0 {
+                0% {
+                    d: path("M 0,400 C 0,400 0,133 0,133 C 84.94358974358974,121.72820512820513 169.88717948717948,110.45641025641025 252,112 C 334.1128205128205,113.54358974358975 413.39487179487173,127.9025641025641 485,133 C 556.6051282051283,138.0974358974359 620.5333333333333,133.93333333333334 697,133 C 773.4666666666667,132.06666666666666 862.471794871795,134.36410256410255 952,144 C 1041.528205128205,153.63589743589745 1131.579487179487,170.61025641025643 1213,170 C 1294.420512820513,169.38974358974357 1367.2102564102565,151.1948717948718 1440,133 C 1440,133 1440,400 1440,400 Z");
+                }
+
+                25% {
+                    d: path("M 0,400 C 0,400 0,133 0,133 C 76.87692307692308,114.0051282051282 153.75384615384615,95.0102564102564 231,108 C 308.24615384615385,120.9897435897436 385.86153846153843,165.96410256410257 475,169 C 564.1384615384616,172.03589743589743 664.8000000000001,133.13333333333333 748,134 C 831.1999999999999,134.86666666666667 896.9384615384614,175.5025641025641 958,178 C 1019.0615384615386,180.4974358974359 1075.446153846154,144.85641025641024 1155,131 C 1234.553846153846,117.14358974358974 1337.2769230769231,125.07179487179488 1440,133 C 1440,133 1440,400 1440,400 Z");
+                }
+
+                50% {
+                    d: path("M 0,400 C 0,400 0,133 0,133 C 86.46923076923076,148.76666666666665 172.93846153846152,164.53333333333333 255,152 C 337.0615384615385,139.46666666666667 414.71538461538466,98.63333333333334 481,99 C 547.2846153846153,99.36666666666666 602.2,140.93333333333334 694,154 C 785.8,167.06666666666666 914.4846153846154,151.63333333333338 1001,137 C 1087.5153846153846,122.36666666666663 1131.8615384615384,108.53333333333332 1198,108 C 1264.1384615384616,107.46666666666668 1352.0692307692307,120.23333333333335 1440,133 C 1440,133 1440,400 1440,400 Z");
+                }
+
+                75% {
+                    d: path("M 0,400 C 0,400 0,133 0,133 C 71.50512820512819,154.18974358974359 143.01025641025637,175.37948717948717 222,169 C 300.9897435897436,162.62051282051283 387.46410256410263,128.67179487179487 471,109 C 554.5358974358974,89.32820512820514 635.1333333333333,83.93333333333334 709,99 C 782.8666666666667,114.06666666666666 850.0025641025641,149.5948717948718 940,155 C 1029.997435897436,160.4051282051282 1142.85641025641,135.6871794871795 1230,127 C 1317.14358974359,118.31282051282051 1378.571794871795,125.65641025641025 1440,133 C 1440,133 1440,400 1440,400 Z");
+                }
+
+                100% {
+                    d: path("M 0,400 C 0,400 0,133 0,133 C 84.94358974358974,121.72820512820513 169.88717948717948,110.45641025641025 252,112 C 334.1128205128205,113.54358974358975 413.39487179487173,127.9025641025641 485,133 C 556.6051282051283,138.0974358974359 620.5333333333333,133.93333333333334 697,133 C 773.4666666666667,132.06666666666666 862.471794871795,134.36410256410255 952,144 C 1041.528205128205,153.63589743589745 1131.579487179487,170.61025641025643 1213,170 C 1294.420512820513,169.38974358974357 1367.2102564102565,151.1948717948718 1440,133 C 1440,133 1440,400 1440,400 Z");
+                }
+            }
+        </style>
+        <defs>
+            <linearGradient id="gradient" x1="0%" y1="53%" x2="100%" y2="47%">
+                <stop offset="5%" stop-color="#a460ed"></stop>
+                <stop offset="95%" stop-color="#a6b1e1"></stop>
+            </linearGradient>
+        </defs>
+        <path
+            d="M 0,400 C 0,400 0,133 0,133 C 84.94358974358974,121.72820512820513 169.88717948717948,110.45641025641025 252,112 C 334.1128205128205,113.54358974358975 413.39487179487173,127.9025641025641 485,133 C 556.6051282051283,138.0974358974359 620.5333333333333,133.93333333333334 697,133 C 773.4666666666667,132.06666666666666 862.471794871795,134.36410256410255 952,144 C 1041.528205128205,153.63589743589745 1131.579487179487,170.61025641025643 1213,170 C 1294.420512820513,169.38974358974357 1367.2102564102565,151.1948717948718 1440,133 C 1440,133 1440,400 1440,400 Z"
+            stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="0.53"
+            class="transition-all duration-300 ease-in-out delay-150 path-0" transform="rotate(-180 720 200)"></path>
+        <style>
+            .path-1 {
+                animation: pathAnim-1 4s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+            }
+
+            @keyframes pathAnim-1 {
+                0% {
+                    d: path("M 0,400 C 0,400 0,266 0,266 C 93.3025641025641,238.13846153846154 186.6051282051282,210.27692307692308 275,226 C 363.3948717948718,241.72307692307692 446.8820512820512,301.03076923076924 516,300 C 585.1179487179488,298.96923076923076 639.8666666666668,237.6 719,219 C 798.1333333333332,200.4 901.6512820512819,224.56923076923078 981,241 C 1060.348717948718,257.4307692307692 1115.5282051282052,266.12307692307695 1188,269 C 1260.4717948717948,271.87692307692305 1350.2358974358974,268.9384615384615 1440,266 C 1440,266 1440,400 1440,400 Z");
+                }
+
+                25% {
+                    d: path("M 0,400 C 0,400 0,266 0,266 C 55.7076923076923,265.07179487179485 111.4153846153846,264.14358974358976 203,277 C 294.5846153846154,289.85641025641024 422.04615384615386,316.49743589743593 517,304 C 611.9538461538461,291.50256410256407 674.4,239.86666666666667 745,228 C 815.6,216.13333333333333 894.3538461538462,244.03589743589743 972,268 C 1049.6461538461538,291.9641025641026 1126.1846153846157,311.98974358974357 1204,311 C 1281.8153846153843,310.01025641025643 1360.9076923076923,288.00512820512824 1440,266 C 1440,266 1440,400 1440,400 Z");
+                }
+
+                50% {
+                    d: path("M 0,400 C 0,400 0,266 0,266 C 84.82564102564103,259.8897435897436 169.65128205128207,253.77948717948715 252,255 C 334.34871794871793,256.22051282051285 414.2205128205129,264.7717948717949 503,270 C 591.7794871794871,275.2282051282051 689.4666666666667,277.1333333333333 754,264 C 818.5333333333333,250.86666666666667 849.9128205128206,222.69487179487183 916,217 C 982.0871794871794,211.30512820512817 1082.8820512820514,228.0871794871795 1176,240 C 1269.1179487179486,251.9128205128205 1354.5589743589744,258.95641025641027 1440,266 C 1440,266 1440,400 1440,400 Z");
+                }
+
+                75% {
+                    d: path("M 0,400 C 0,400 0,266 0,266 C 76.5230769230769,255.45384615384614 153.0461538461538,244.9076923076923 233,246 C 312.9538461538462,247.0923076923077 396.3384615384615,259.823076923077 468,257 C 539.6615384615385,254.17692307692303 599.6,235.79999999999995 675,248 C 750.4,260.20000000000005 841.2615384615383,302.9769230769231 925,313 C 1008.7384615384617,323.0230769230769 1085.3538461538462,300.2923076923077 1170,287 C 1254.6461538461538,273.7076923076923 1347.3230769230768,269.8538461538461 1440,266 C 1440,266 1440,400 1440,400 Z");
+                }
+
+                100% {
+                    d: path("M 0,400 C 0,400 0,266 0,266 C 93.3025641025641,238.13846153846154 186.6051282051282,210.27692307692308 275,226 C 363.3948717948718,241.72307692307692 446.8820512820512,301.03076923076924 516,300 C 585.1179487179488,298.96923076923076 639.8666666666668,237.6 719,219 C 798.1333333333332,200.4 901.6512820512819,224.56923076923078 981,241 C 1060.348717948718,257.4307692307692 1115.5282051282052,266.12307692307695 1188,269 C 1260.4717948717948,271.87692307692305 1350.2358974358974,268.9384615384615 1440,266 C 1440,266 1440,400 1440,400 Z");
+                }
+            }
+        </style>
+        <defs>
+            <linearGradient id="gradient" x1="0%" y1="53%" x2="100%" y2="47%">
+                <stop offset="5%" stop-color="#a460ed"></stop>
+                <stop offset="95%" stop-color="#a6b1e1"></stop>
+            </linearGradient>
+        </defs>
+        <path
+            d="M 0,400 C 0,400 0,266 0,266 C 93.3025641025641,238.13846153846154 186.6051282051282,210.27692307692308 275,226 C 363.3948717948718,241.72307692307692 446.8820512820512,301.03076923076924 516,300 C 585.1179487179488,298.96923076923076 639.8666666666668,237.6 719,219 C 798.1333333333332,200.4 901.6512820512819,224.56923076923078 981,241 C 1060.348717948718,257.4307692307692 1115.5282051282052,266.12307692307695 1188,269 C 1260.4717948717948,271.87692307692305 1350.2358974358974,268.9384615384615 1440,266 C 1440,266 1440,400 1440,400 Z"
+            stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="1"
+            class="transition-all duration-300 ease-in-out delay-150 path-1" transform="rotate(-180 720 200)"></path>
+    </svg>
+
+
+    <!-- about section -->
+    <section id="about">
+        <div class="container">
+            <h1>
+                About Me
+            </h1>
+            <div class="hr">
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 my-col col-md-12   ">
+                    <img src="https://dvip1.github.io/cv/20220126_210852-01-01_edited_edited-modified.png"
+                        alt="my-photo">
+                </div>
+                <div class="col-lg-6 my-col col-md-12  ">
+                    <h3>I'm Dvip Patel</h3>
+                    <br>
+                    <div class="facts">
+                        <p>-Web developer & designer</p>
+                        <p>-Python developer</p>
+                        <p>-Linux geek (love to change distros)</p>
+                        <p>-Problem Solver</p>
+                        <p>-Enginnering Student (sadly)</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <img class="waves" src="images/layered-waves-haikei.svg" alt="">
+    <!-- skills section -->
+    <section id="skills">
+        
+    </section>
     <script src="js/script.js"></script>
 </body>
 
