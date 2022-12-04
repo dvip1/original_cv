@@ -13,12 +13,7 @@
 
 <body>
 
-    <!-------------importing js bs and fontawesome --------------->
-    <script src="https://kit.fontawesome.com/c9dc8e623e.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <!-------------/importing js bs and fontawesome--------------->
+
     <section id="top">
         <div class="push"></div>
         <div class="container my-nav sticky-top">
@@ -31,8 +26,8 @@
                 <div class="navbar-collapse collapse my-nav" id="navbar">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item nav-items "><a href="#about" class="nav-link">About</a></li>
-                        <li class="nav-item nav-items "><a href="#skills" class="nav-link">Projects</a></li>
-                        <li class="nav-item nav-items "><a href="#contacts" class="nav-link">Contact</a></li>
+                        <li class="nav-item nav-items "><a href="#projects" class="nav-link">Projects</a></li>
+                        <li class="nav-item nav-items "><a href="#contact" class="nav-link">Contact</a></li>
                     </ul>
                 </div>
             </nav>
@@ -42,10 +37,14 @@
             <div class="conatiner">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h1>
+                        <h1>I am Dvip a Software developer & a Student</h1>
                         <div class="animation">
-                            <button href="#" class="btn btn-light">Log in</button>
-                            <button href="#" class="btn btn-light">Sign up</button>
+                            <button href="#" class="btn btn-light"
+                                onclick="window.location.href='https://github.com/dvip1/'">Github <span
+                                    class="fa-brands fa-github" style="font-size: 1.8rem;"></span> </button>
+                            <button href="#" class="btn btn-light"
+                                onclick="window.location.href='https://codepen.io/dvip1/'">Codepen <span
+                                    class="fa-brands fa-codepen" style="font-size: 1.8rem;"></span></button>
                         </div>
                     </div>
 
@@ -164,11 +163,53 @@
             </div>
     </section>
     <img class="waves" src="images/layered-waves-haikei.svg" alt="">
-    <!-- skills section -->
-    <section id="skills">
-        
+    <!-- projects section -->
+    <section id="projects">
+        <h1>My projects</h1>
+        <div class="hr" style="border-top: 8px dotted #BCCEF8;">
+            <hr>
+        </div>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <img src="images/layered-peaks-haikei.svg" alt="waves" width="100%">
+    <!-- contact section -->
+    <section id="contact">
+        <a href="https://www.instagram.com/dvip_patel/" class="fa-brands fa-instagram fa-2x"></a>
+        <a href="https://twitter.com/PatelDvip" class="fa-brands fa-twitter nav-link  fa-2x"></a>
+        <a href="https://www.linkedin.com/in/dvip-patel-5b1b1b1b9/" class="fa-brands fa-2x fa-linkedin"></a>
+        <a href="https://www.github.com/dvip1" class="fa-brands fa-github nav-link fa-2x"></a>
+        <a href="mailto: dvipatwork@outlook.com" class="fa-solid fa-envelope nav-link fa-2x"></a>
+        <p><i class="fa-regular fa-copyright"></i> Copyright 2022 Dvip Patel</p>
     </section>
     <script src="js/script.js"></script>
+    <!-------------importing js bs and fontawesome --------------->
+    <script src="https://kit.fontawesome.com/c9dc8e623e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-------------/importing js bs and fontawesome--------------->
 </body>
 
 </html>
