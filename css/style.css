@@ -86,14 +86,18 @@ nav {
 
 /* about section */
 @media screen and (max-width: 991px) {
-    #about p, h3{
+
+    #about p,
+    h3 {
         text-align: center !important;
     }
-  }
+}
+
 #about {
     background-image: linear-gradient(to bottom, white, #FAF7F0);
     text-align: center;
 }
+
 #about h1 {
     text-align: left;
     color: #371B58;
@@ -138,10 +142,12 @@ nav {
 
 
 
-.fa-solid, .fa-brands{
+.fa-solid,
+.fa-brands {
     font-size: 2.5rem;
     color: #4C3575;
 }
+
 ul {
     text-align: left;
     list-style: none;
@@ -159,13 +165,14 @@ ul {
     width: 10%;
     display: block;
 }
-.waves{
+
+.waves {
     width: 100%;
 }
 
 
 /* projects section  */
-#projects{
+#projects {
     color: white;
     font-family: sans-serif;
     margin: auto;
@@ -174,28 +181,51 @@ ul {
     width: auto;
     background-color: #A460ED;
     padding-bottom: 8rem;
-    
+
 }
 
-#projects h1{
+#projects h1, #skills h1 {
     color: #E1FFEE;
     font-size: 5rem;
     font-family: 'Great Vibes', cursive;
     margin: auto;
     text-align: center;
 }
-#projects h2{
+
+#projects h2 {
+    text-decoration: white dotted underline;
     font-size: 1.5rem;
     padding: 0 2rem;
     font-weight: 550;
 }
-#projects p{
+
+#projects p {
     padding: 0 3rem;
 }
-.my-container{
+
+.my-container {
+    border-radius: 25px;
+    margin: 0 4vh;
     padding: 3rem 0;
-    background: rgba(166, 175, 225, 0.2)
+    background-image: linear-gradient(120deg, rgba(254, 252, 243, 0.2), rgba(245, 235, 224, 0.3), rgba(240, 219, 219, 0.2), rgba(219, 163, 154, 0.3), rgba(166, 177, 225, 0.2));
+    animation: gradTrans 5s ease-in-out infinite;
+    background-size: 400% 400%;
 }
+
+@keyframes gradTrans {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+
 .center {
     margin-bottom: 2rem;
     display: block;
@@ -203,30 +233,54 @@ ul {
     margin-right: auto;
     width: 17%;
     border-radius: 100%;
-  }
-#projects a{
-    padding: 1rem 2rem;
-    border-radius: 20px;
 }
+
+#projects a {
+    margin: 5px;
+    padding: 0.8rem;
+    box-shadow: 3px 3px 3px #BCCEF8;
+    border-radius: 20px;
+    font-family: sans-serif;
+    color: #494F80;
+    font-size: 1.3rem;
+}
+/* skills section */
+#skills {
+    color: white;
+    background-color: #A460ED;
+    text-align: center;
+    overflow: auto;
+    width: auto;
+    padding-bottom: 8rem;
+}
+#skills .fa{
+    padding: 1rem 0 3rem;
+    color: white;
+
+}
+
 /* contact section  */
-#contact{
-	margin: auto;
-	background-image: linear-gradient(to top, #EDE4E0, white);
-	text-align: center;
+#contact {
+    margin: auto;
+    background-image: linear-gradient(to top, #EDE4E0, white);
+    text-align: center;
     padding: 3rem 0 6rem;
 }
-#contact p{
-	margin: 0.4rem;
-	font-family: 'Montserrat-Black', sans-serif;
-	line-height: 1.5;
-	font-size: 1 rem;
-	color: grey;    
+
+#contact p {
+    margin: 0.4rem;
+    font-family: 'Montserrat-Black', sans-serif;
+    line-height: 1.5;
+    font-size: 1 rem;
+    color: grey;
 }
-#contact a{
-	text-decoration: none;
-	color: #A460ED;
-	font-size: 2.3rem;
+
+#contact a {
+    text-decoration: none;
+    color: #A460ED;
+    font-size: 2.3rem;
 }
-#contact a:hover{
-	color: #a6b1E1;
+
+#contact a:hover {
+    color: #a6b1E1;
 }
