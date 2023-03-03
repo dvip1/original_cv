@@ -1,5 +1,5 @@
 # original_cv
-* link: https://www.dvippatel.me/original_cv
+* link: https://ubiquitous-begonia-bedf8d.netlify.app/
 <br>
 This is my Portfolio website. It is built using Vanilla JS, HTML, CSS and Bootstrap. It is a single page website with a responsive design. It is hosted on Github Pages. It is a work in progress and I will be adding more projects to it as I go along.
 
